@@ -1,0 +1,12 @@
+<h1>Главный дашборд</h1>
+<script type="text/javascript">
+	var context = function(c){
+		document.getElementById('context').innerHTML = c;
+	}
+
+	window.addEventListener('message', function(event){
+		context(event.data.context);
+	});
+</script>
+<p id="context"></p>
+<iframe src="page1.html"></iframe>
